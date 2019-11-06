@@ -1,13 +1,16 @@
 /* Enter your Styles below! */
 
-
 body { 
-	font-family: Helvetica, sans-serif;
-	font-size: 16px;
-	 }
+	font-family: bureau-grot, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	/*font weight MUST come first or else typeface won't work*/
+	}
 
 h1, h2, h3, h4 {
-	font-family: Helvetica, sans-serif;
+	font-family: museo-slab, serif;
+	font-weight: 100;
+	font-style: normal;
 }
 
 h1 {
@@ -30,16 +33,45 @@ blockquote {
 	font-family: Helvetica, sans-serif;
 }
 
-header {margin-bottom: 20px;}
+header {margin-bottom: 200px;}
 
 /* ensures that your images stretch the width of their containers */
-img { width: 100%; }
+/*img { width: 100%; }*/
 
-a { 
+a {
 	color: red;
 	text-decoration: none;
 	 }
 a:hover { color: black; }
+
+.sidenav {
+  height: 100%;
+  width: 150px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #87d2d4;
+  overflow-x: hidden;
+  padding-top: 20px;
+  text-align: right;
+}
+
+.sidenav a {
+  padding: 6px 20px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #fff;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.mobilenavicon {
+	width: 100px;
+}
 
 .grid {
 	display: grid;
@@ -53,6 +85,55 @@ a:hover { color: black; }
 	background-color: #ccc;
 	padding: 20px;
 }
+.desktoplogo {
+	height: 250px;
+   	left: 50%;
+   	margin-top: -125px;
+   	margin-left: -125px;
+   	position: absolute;
+   	top: 50%;
+   	width: 250px;
+}
+.tagline {
+	font-family: museo-slab, serif;
+	font-weight: 100;
+	font-style: normal;
+	text-align: center;
+	position: relative;
+}
+/*Mobile Version*/
+@media only screen and (min-width: 768px) {
+	body{
+		background-image: url("../images/test2mobilebackground.png");
+		background-color: #e15e35;
+		background-size: cover;
+	}
+	.nav li {
+		display: inline;
+	}
+	.sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  	}
+  	.sidebar a {
+  		float: left;
+  	}
+}
+/*Desktop*/
+@media only screen and (min-width: 1024px) {
+	body{
+		background-image: url("../images/testdesktopbackground.jpg");
+		background-color: green;
+	}
+}
+/*Desktop Wide*/
+@media only screen and (min-width: 1200px) {
+	body{
+		background-color: blue;
+	}
+}
+
 /*
 font-family: 'Mansalva', cursive;
 font-family: 'Dosis', sans-serif;
