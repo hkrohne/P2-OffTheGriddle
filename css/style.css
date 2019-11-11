@@ -39,40 +39,55 @@ header {margin-bottom: 200px;}
 /*img { width: 100%; }*/
 
 a {
-	color: red;
 	text-decoration: none;
+	color: #fff;
 	 }
-a:hover { color: black; }
+a:hover { 
+	color: #e15e35; 
 
+}
 .sidenav {
-  height: 100%;
-  width: 150px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #87d2d4;
-  overflow-x: hidden;
-  padding-top: 20px;
-  text-align: right;
+	height: 100%;
+	width: 150px;
+  	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: #87d2d4;
+	overflow-x: hidden;
+	padding-top: 20px;
+	text-align: right;
 }
-
 .sidenav a {
-  padding: 6px 20px 6px 16px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #fff;
-  display: block;
-}
-
+	padding: 20px 30px 6px 16px;
+	text-decoration: none;
+	font-size: 25px;
+	color: #fff;
+	display: block;
+	}
 .sidenav a:hover {
-  color: #f1f1f1;
+  	color: #f1f1f1;
 }
+.hamburgericon{
+	max-height: 40px;
+}
+.mainpage {
+	background-size: cover;
+	margin: auto;
+}
+ul.mobilelinks {
+	text-align: center;
+	padding-top: 10px;
+	margin: auto;
 
+
+}
+ul.mobilelinks li {
+	display: inline;
+}
 .mobilenavicon {
-	width: 100px;
+	max-height: 40px;
 }
-
 .grid {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
@@ -80,19 +95,26 @@ a:hover { color: black; }
 	width: 60%;
 	margin: auto;
 }
-
 .grid div {
 	background-color: #ccc;
 	padding: 20px;
 }
 .desktoplogo {
 	height: 250px;
-   	left: 50%;
+   	left: 55%;
    	margin-top: -125px;
    	margin-left: -125px;
    	position: absolute;
    	top: 50%;
-   	width: 250px;
+   
+}
+.mobilelogo{
+	height: 300px;
+	position: absolute;
+	top: 50%;
+	margin-top: -150px;
+	left: 50%;
+	margin-left: -175px;
 }
 .tagline {
 	font-family: museo-slab, serif;
@@ -101,29 +123,47 @@ a:hover { color: black; }
 	text-align: center;
 	position: relative;
 }
-/*Mobile Version*/
-@media only screen and (min-width: 768px) {
-	body{
-		background-image: url("../images/test2mobilebackground.png");
+footer {
+	position: absolute;
+  	bottom: 0;
+  	width:100%;
+}
+
+@media only screen and (max-width: 768px) {
+	.sidenav{
+		display: none;
+	}
+	.desktoplogo{
+		display: none;
+	}
+	body {
 		background-color: #e15e35;
+		background-image: url("../images/test2mobilebackground.png");
 		background-size: cover;
 	}
-	.nav li {
-		display: inline;
+	footer{
+		text-align: center;
 	}
-	.sidebar {
-    width: 100%;
-    height: auto;
-    position: relative;
+  }
+/*Mobile Version*/
+@media only screen and (min-width: 768px) {
+	.mobilelinks{
+		display: none;
+	}
+	.mobilelogo{
+		display: none;
+	}
+	body{
+		background-image: url("../images/testdesktopbackground.jpg");
+		background-size: cover;
   	}
-  	.sidebar a {
-  		float: left;
+  	footer{ 
+  		left: 50%;
   	}
 }
 /*Desktop*/
 @media only screen and (min-width: 1024px) {
 	body{
-		background-image: url("../images/testdesktopbackground.jpg");
 		background-color: green;
 	}
 }
@@ -134,8 +174,7 @@ a:hover { color: black; }
 	}
 }
 
-/*
-font-family: 'Mansalva', cursive;
-font-family: 'Dosis', sans-serif;
-font-family: 'Indie Flower', cursive;
-*/
+
+
+
+

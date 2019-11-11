@@ -13,20 +13,13 @@
 </head>
 <body>
 		<!-- Links at top of page on mobile site. -->
-		<ul>
-			<li><a href="#"><img class="mobilenavicon" src="../images/phoneicon.png" alt="phonelink"></a></li>
-			<li><a href="subpage-one.html">example link to subpage one</a></li>
-			<li><a href="#">ADDRESS</a></li>
+		<ul class="mobilelinks">
+			<li><a href="tel:5037649160"><img class="mobilenavicon" src="images/phoneicon.png" alt="phonelink"></a></li>
+			<li><a href="#">Dropdown Menu</a></li>
+			<li><a href="https://www.google.com/maps/place/Off+The+Griddle/@45.4888444,-122.5974893,17z/data=!3m1!4b1!4m5!3m4!1s0x5495a0e419b8689d:0x874c9670a0b0be9e!8m2!3d45.4888444!4d-122.5953006"><img class="mobilenavicon" src="images/locationicon.png" alt="locationicon"></a></li>
 		</ul>
 	<nav>
 		<!-- Main navigation on Desktop Site -->
-		<ul>
-			<li><a href="index.html">Home</a></li>
-			<li><a href="subpage-one.html">About</a></li>
-			<li><a href="subpage-one.html">Menus</a></li>
-			<li><a href="subpage-one.html">Contact</a></li>
-			<li><a href="subpage-one.html">Gallery</a></li>
-		</ul>
 	</nav>
 	<!--<div class="sidenav">
   			<a class="active" href="index.html">Home</a>
@@ -41,9 +34,22 @@
 	</header>
 
 	<main>
-		<img class="desktoplogo" src="http://placekitten.com/300/300" alt=LOGO>
-		<p class="tagline">Possible tagline!</p>
-		<blockquote>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus soluta vero fugiat saepe, tempore laboriosam nemo pariatur maxime sunt rerum."</blockquote>
+		<div class="parent"> 
+			<div class="sidenav"> 
+				<ul>
+					<li><a class="active" class="hamburgericon" href="index.html"><img src="images/hamburgericon.png" alt="hamburger icon"></a></li>
+					<li><a href="subpage-one.html">About</a></li>
+					<li><a href="subpage-one.html">Menus</a></li>
+					<li><a href="subpage-one.html">Contact</a></li>
+					<li><a href="subpage-one.html">Gallery</a></li>
+				</ul>
+			</div> 
+			<div class="mainpage"> 
+				<img class="desktoplogo" src="images/testhomelogo.png" alt=LOGO>
+				<img class="mobilelogo" src="images/testmobilelogo.png" alt=LOGO>
+				<p class="tagline">Possible tagline!</p>
+			</div> 
+		</div>
 	<!-- Main content here -->
 	</main>
 	<footer>
