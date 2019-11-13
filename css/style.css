@@ -48,7 +48,7 @@ a:hover {
 }
 .sidenav {
 	height: 100%;
-	width: 150px;
+	width: 170px;
   	position: fixed;
 	z-index: 1;
 	top: 0;
@@ -66,10 +66,10 @@ a:hover {
 	display: block;
 	}
 .sidenav a:hover {
-  	color: #f1f1f1;
+  	color: #e15e35;
 }
-.hamburgericon{
-	max-height: 40px;
+.active.hamburgericon {
+	max-height: 50px;
 }
 .mainpage {
 	background-size: cover;
@@ -79,7 +79,6 @@ ul.mobilelinks {
 	text-align: center;
 	padding-top: 10px;
 	margin: auto;
-
 
 }
 ul.mobilelinks li {
@@ -100,10 +99,10 @@ ul.mobilelinks li {
 	padding: 20px;
 }
 .desktoplogo {
-	height: 250px;
+	height: 350px;
    	left: 55%;
-   	margin-top: -125px;
-   	margin-left: -125px;
+   	margin-top: -175px;
+   	margin-left: -175px;
    	position: absolute;
    	top: 50%;
    
@@ -117,18 +116,41 @@ ul.mobilelinks li {
 	margin-left: -175px;
 }
 .tagline {
-	font-family: museo-slab, serif;
-	font-weight: 100;
+	font-family: bureau-grot, serif;
+	font-weight: 500;
 	font-style: normal;
+	font-size: 24px;
+	text-transform: uppercase;
+	color: #fff;
 	text-align: center;
 	position: relative;
+	margin-left: 210px;
+	margin-top: 80vh;
 }
 footer {
 	position: absolute;
   	bottom: 0;
   	width:100%;
 }
+/*END OF HOMEPAGE*/
+/*START ABOUT PAGE*/
+body.aboutpage{
+	background-color: #e15e35;
+}
+.subpageheader {
+	font-family: bureau-grot, serif;
+	font-weight: 500;
+	font-style: normal;
+	font-size: 36px;
+	color: #fff;
+	text-transform: uppercase;
+	text-align: center;
+	margin-top: 10vh;
 
+}
+/*END ABOUT PAGE*/
+
+/*Mobile Version*/
 @media only screen and (max-width: 768px) {
 	.sidenav{
 		display: none;
@@ -136,7 +158,7 @@ footer {
 	.desktoplogo{
 		display: none;
 	}
-	body {
+	body.homepage {
 		background-color: #e15e35;
 		background-image: url("../images/test2mobilebackground.png");
 		background-size: cover;
@@ -145,7 +167,7 @@ footer {
 		text-align: center;
 	}
   }
-/*Mobile Version*/
+ /*Larger than Mobile*/
 @media only screen and (min-width: 768px) {
 	.mobilelinks{
 		display: none;
@@ -153,9 +175,10 @@ footer {
 	.mobilelogo{
 		display: none;
 	}
-	body{
+	body.homepage{
 		background-image: url("../images/testdesktopbackground.jpg");
 		background-size: cover;
+		background-attachment: fixed;
   	}
   	footer{ 
   		left: 50%;
@@ -164,13 +187,13 @@ footer {
 /*Desktop*/
 @media only screen and (min-width: 1024px) {
 	body{
-		background-color: green;
+		
 	}
 }
 /*Desktop Wide*/
 @media only screen and (min-width: 1200px) {
 	body{
-		background-color: blue;
+		
 	}
 }
 
