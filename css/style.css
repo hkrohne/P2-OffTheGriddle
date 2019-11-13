@@ -128,6 +128,8 @@ ul.mobilelinks li {
 	margin-top: 80vh;
 }
 footer {
+	font-family: bureau-grot, serif;
+	font-weight: 500;
 	position: absolute;
   	bottom: 0;
   	width:100%;
@@ -163,6 +165,13 @@ body.aboutpage{
 		background-image: url("../images/test2mobilebackground.png");
 		background-size: cover;
 	}
+	.tagline {
+		text-align: center;
+		margin: auto;
+		max-width: 350px;
+		line-height: 30px;
+		margin-top: 65vh;
+	}
 	footer{
 		text-align: center;
 	}
@@ -185,6 +194,16 @@ body.aboutpage{
   	}
 }
 /*Desktop*/
+@media only screen and (max-width: 1024px) {
+	.tagline { /*These settings are messign with the centering on mobile*/
+		max-width: 350px;
+		line-height: 30px;
+		margin-top: 80vh;
+		margin-left: -150px;
+		left: 55%;
+
+	}
+}
 @media only screen and (min-width: 1024px) {
 	body{
 		
