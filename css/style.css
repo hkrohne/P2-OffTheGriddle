@@ -102,21 +102,9 @@ h4.showhours {
   	display: block;
  	
 }
-.mainpage {
+.homemainpage {
 	background-size: cover;
 	margin: auto;
-}
-
-.grid {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-gap: 40px;
-	width: 60%;
-	margin: auto;
-}
-.grid div {
-	background-color: #ccc;
-	padding: 20px;
 }
 .desktoplogo {
 	height: 350px;
@@ -175,7 +163,28 @@ body.aboutpage{
 	text-transform: uppercase;
 	text-align: center;
 	margin-top: 10vh;
+	margin-left: 210px;
 
+}
+.parent {
+
+}
+.aboutmainpage {
+
+}
+.grid {
+	position: absolute;
+	background-color: #fff;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 40px;
+	width: 60%;
+	padding: 50px;
+	border-radius: 25px;
+}
+.grid div {
+	background-color: #ccc;
+	padding: 20px;
 }
 /*END ABOUT PAGE*/
 

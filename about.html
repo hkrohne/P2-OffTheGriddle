@@ -12,6 +12,11 @@
 	<link rel="stylesheet" href="https://use.typekit.net/cro3hua.css">
 </head>
 <body class="aboutpage">
+	<ul class="mobilelinks">
+			<li><a href="tel:5037649160"><img class="mobilephoneicon" src="images/phoneicon.png" alt="phonelink"></a></li>
+			<li><a href="#"><img src="images/hamburgericon.png" class="mobilehamburgerdropdown" alt="hamburger dropdown"></a></li>
+			<li><a href="https://www.google.com/maps/place/Off+The+Griddle/@45.4888444,-122.5974893,17z/data=!3m1!4b1!4m5!3m4!1s0x5495a0e419b8689d:0x874c9670a0b0be9e!8m2!3d45.4888444!4d-122.5953006"><img class="mobilelocationicon" src="images/locationicon.png" alt="locationicon"></a></li>
+	</ul>
 	<!-- These semantic tags were added to help you get started but you are very welcome to delete any of them and do your own thing -->
 	<header>
 		<!-- header, h1, logo etc content -->
@@ -19,22 +24,47 @@
 	</header>
 	<nav>
 		<!-- Global naviagtion stuff here, but move this or delete this to your liking. Same goes for the rest -->
-		<ul>
+		<!-- <ul>
 			<li><a href="#">link</a></li>
 			<li><a href="#">link</a></li>
 			<li><a href="#">link</a></li>
-		</ul>
+		</ul> -->
 	</nav>
 	<main>
-		<blockquote>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus soluta vero fugiat saepe, tempore laboriosam nemo pariatur maxime sunt rerum."</blockquote>
 	<!-- Main content here -->
-	<div class="grid">
-			<div>Column 1</div>
-			<div>Column 2</div>
+	<div class="parent"> 
+			<div class="sidenav"> 
+				<ul>
+					<li><a class="active"  href="index.html"><img src="images/hamburgericon.png" class="hamburgericon" alt="hamburger icon"></a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="subpage-one.html">Menus</a></li>
+					<li><a href="subpage-one.html">Contact</a></li>
+					<li><a href="subpage-one.html">Gallery</a></li>
+				</ul>
+				<div class="hoverhourbutton">
+				<ul>
+					<li><a href="#">Hours</a></li>
+					<p class="showhours">
+						<h3 class="showhours">9am - 3pm</h3>
+						<h4 class="showhours">Mon–Fri</h4>
+						<h3 class="showhours">8am - 3pm</h3>
+						<h4 class="showhours">Sat-Sun</h4>
+					</p>
+				</div>
+				</ul>
+			</div> 
+			<div class="aboutmainpage">
+				<div class="grid">
+					<div>Column 1</div>
+					<div>Column 2</div>
+				</div>
+			</div>
 		</div>
+	
 	</main>
 	<footer>
 		<!-- footer content here -->
+		&copy; harrison krohne
 	</footer>
 	<!-- link for jquery -->
 	<script
