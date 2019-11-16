@@ -22,7 +22,7 @@ h2 {
 }
 
 h3 {
-	font-size: 28px;
+	font-size: 22px;
 }
 h4 {
 	font-size: 24px;
@@ -77,38 +77,36 @@ a:hover {
 	max-height: 50px;
 }
 .showhours {
-	font-family: bureau-grot, sans-serif;
-	font-weight: 400;
   	color: #fff;
   	display: none;
-  	font-size: 22px;
-  	line-height: 28px;
   	margin-top: 20px;
   	padding-right: 30px;
-  	text-transform: capitalize;
-
+}
+.showhours {
+	transition: width 2s;
+}
+h3.showhours {
+	font-family: museo-slab, serif;
+	font-weight: 500;
+	font-size: 22px;
+	text-transform: capitalize;
+}
+h4.showhours {
+	font-family: bureau-grot, serif;
+	line-height: 20px;
+	font-weight: 300;
+	font-size: 16px;
+	text-transform: uppercase;
 }
 .parent .sidenav .hoverhourbutton:hover .showhours {
   	display: block;
-  	text-decoration: none;
-
+ 	
 }
 .mainpage {
 	background-size: cover;
 	margin: auto;
 }
-ul.mobilelinks {
-	text-align: center;
-	padding-top: 10px;
-	margin: auto;
 
-}
-ul.mobilelinks li {
-	display: inline;
-}
-.mobilenavicon {
-	max-height: 40px;
-}
 .grid {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
@@ -165,6 +163,8 @@ footer {
 /*START ABOUT PAGE*/
 body.aboutpage{
 	background-color: #e15e35;
+	background-image: url("../images/testdesktoptriangles.png");
+	background-size: cover;
 }
 .subpageheader {
 	font-family: bureau-grot, serif;
@@ -198,15 +198,37 @@ body.aboutpage{
 	}
 	body.homepage {
 		background-color: #e15e35;
-		background-image: url("../images/test2mobilebackground.png");
+		background-image: url("../images/testmobiletriangles.png");
 		background-size: cover;
 	}
-	.hamburgerdropdown{
+	ul.mobilelinks {
+		padding-top: 10px;
+		margin: auto;
+	}
+	ul.mobilelinks li {
+		display: inline;
+	}
+	.mobilephoneicon {
+		max-height: 50px;'
+		position: absolute;
+		left: 50px;
+	}
+	.mobilehamburgerdropdown{
 		width: 80px;
+		position: absolute;
+		margin: auto;
+		justify-content: center;
+	}
+	.mobilelocationicon {
+		max-height: 40px;
+		position: absolute;
+		right: 20px;
+		padding-top: 5px;
 	}
 	.tagline {
+		position: absolute;
 		text-align: center;
-		margin-left: auto;
+		margin-left: 0;
 		max-width: 350px;
 		line-height: 30px;
 		margin-top: 65vh;
@@ -220,13 +242,16 @@ body.aboutpage{
 	.mobilelinks{
 		display: none;
 	}
+	.desktoplogo{
+		display: all;
+	}
 	.mobilelogo{
 		display: none;
 	}
 	body.homepage{
 		background-image: url("../images/testdesktopbackground.jpg");
 		background-size: cover;
-		background-attachment: fixed;
+		
   	}
   	footer{ 
   		left: 50%;
@@ -234,7 +259,7 @@ body.aboutpage{
 }
 /*Desktop*/
 @media only screen and (max-width: 1024px) {
-	.tagline { /*These settings are messign with the centering on mobile*/
+	.tagline { /*These settings are messing with the centering on mobile*/
 		max-width: 350px;
 		line-height: 30px;
 		margin-top: 80vh;
