@@ -76,6 +76,110 @@ a:hover {
 .active.hamburgericon {
 	max-height: 50px;
 }
+/* START OF MOBILE MENU*/
+.nav, .desktop {
+    display: block;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 900;
+}
+
+.icon {
+    position: fixed;
+    cursor: pointer;
+    top: 5%;
+    right: 20%;
+    width: 40px;
+    height: 45px;
+    transform: translate(-50%, -50%);
+    display: block;
+    z-index: 1000;
+}
+
+.hamburger {
+    width: 60px;
+    height: 4px;
+    line-height: 70px;
+    background: #fff;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0 2px 5px rgba(0,0,0,.2);
+    transition: .5s;
+}
+
+.hamburger:before,
+.hamburger:after {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 4px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,.2);
+    transition: .5s;
+}
+
+.hamburger:before {
+    top: -10px;
+}
+
+.hamburger:after {
+    top: 10px;
+}
+
+.icon.active .hamburger {
+    background: rgba(0,0,0,0);
+    box-shadow: 0 2px 5px rgba(0,0,0,0);
+}
+
+.icon.active .hamburger:before {
+    top: 0;
+    transform: rotate(45deg);
+}
+
+.icon.active .hamburger:after {
+    top: 0;
+    transform: rotate(135deg);
+}
+
+.menu-mobile {
+    background-color: #fff;
+    height: 100vh;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding-top: 150px;
+    font-family: 'bureau-grot', serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.menu-mobile, .menu-mobile a {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.menu-mobile a {
+    clear: right;
+    text-decoration: none;
+    color: #e15e35;
+    height: 70px;
+    line-height: 70px;
+}
+.menu-mobile a:hover {
+    text-decoration: underline;
+}
+
+.desktop, .menu-desktop, .menu-mobile {
+        display: none;
+    }
+/* END OF MOBILE MENU*/
 .showhours {
   	color: #fff;
   	display: none;
@@ -142,7 +246,7 @@ footer {
 	font-size: 14px;
 	color: #fff;
 	text-align: center;
-	position: absolute;
+	position: fixed;
   	bottom: 5px;
 	margin-top: 80vh;
 
@@ -176,15 +280,42 @@ body.aboutpage{
 	position: absolute;
 	background-color: #fff;
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 1fr 1fr; /*PERCENTAGES UP THE LEFT/RIGHT PADDING COMPARED WITH USING 1FR 1FR*/
 	grid-gap: 40px;
 	width: 60%;
 	padding: 50px;
 	border-radius: 25px;
+	text-align: center;
 }
 .grid div {
 	background-color: #ccc;
 	padding: 20px;
+}
+.aboutimage {
+	margin: auto;
+	max-width: 450px;
+	width: 100%;
+}
+.imagecaption {
+	font-family: bureau-grot, serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 20px;
+	text-transform: uppercase;
+	color: #e15e35;
+	padding-top: 30px;
+}
+.aboutbody {
+	font-family: museo-slab, serif;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 20px;
+	color: #565656;
+	text-align: left;
+}
+.hyperlink {
+	text-decoration: underline;
+	color: #565656;
 }
 /*END ABOUT PAGE*/
 
@@ -228,13 +359,13 @@ body.aboutpage{
 		margin: auto;
 		justify-content: center;
 	}
-	.mobilelocationicon {
+	.mobilelocationicon{
 		max-height: 40px;
 		position: absolute;
 		right: 20px;
 		padding-top: 5px;
 	}
-	.tagline {
+	.tagline{
 		position: absolute;
 		text-align: center;
 		margin-left: 0;
@@ -245,6 +376,23 @@ body.aboutpage{
 	footer{
 		text-align: center;
 	}
+	  	/*START ABOUT PAGE*/
+  	.subpageheader{
+  		margin-top: 5vh;
+  	}
+  	.grid{
+  		display: inline-block;
+  	}
+	/*END ABOUT PAGE*/
+
+	/*START MENU PAGE*/
+	/*END MENU PAGE*/
+
+	/*START CONTACT PAGE*/
+	/*END CONTACT PAGE*/
+
+	/*START GALLERY PAGE*/
+	/*END GALLERY PAGE*/
   }
  /*Larger than Mobile*/
 @media only screen and (min-width: 768px) {
@@ -264,6 +412,9 @@ body.aboutpage{
   	}
   	footer{ 
   		left: 50%;
+  	}
+  	.icon {
+  		display: none;
   	}
 }
 /*Desktop*/
