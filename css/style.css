@@ -7,33 +7,14 @@ body {
 	/*font weight MUST come first or else typeface won't work*/
 	}
 
-h1, h2, h3, h4 {
-	font-family: museo-slab, serif;
-	font-weight: 100;
-	font-style: normal;
-}
 
-h1 {
-	font-size: 48px;
-}
-
-h2 {
-	font-size: 36px;
-}
-
-h3 {
-	font-size: 22px;
-}
-h4 {
-	font-size: 24px;
-}
 
 blockquote {
 	margin: 20px 60px;
 	font-family: Helvetica, sans-serif;
 }
 
-header {margin-bottom: 200px;}
+
 
 /* ensures that your images stretch the width of their containers */
 /*img { width: 100%; }*/
@@ -171,6 +152,7 @@ a:hover {
     color: #e15e35;
     height: 70px;
     line-height: 70px;
+    font-size: 20px;
 }
 .menu-mobile a:hover {
     text-decoration: underline;
@@ -178,7 +160,31 @@ a:hover {
 
 .desktop, .menu-desktop, .menu-mobile {
         display: none;
-    }
+}
+hr.menu-mobileseparator {
+	border: 1px solid #e15e35;
+	width: 60%;
+}
+.mobilehours {
+	font-size: 50px;
+}
+h3.mobileshowhours {
+	color: #e15e35;
+	font-family: museo-slab, serif;
+	font-weight: 500;
+	font-size: 18px;
+	text-transform: capitalize;
+	margin-bottom: 5px;
+}
+h4.mobileshowhours {
+	color: #e15e35;
+	font-family: bureau-grot, serif;
+	line-height: 20px;
+	font-weight: 300;
+	font-size: 14px;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
 /* END OF MOBILE MENU*/
 .showhours {
   	color: #fff;
@@ -234,10 +240,8 @@ h4.showhours {
 	font-size: 24px;
 	text-transform: uppercase;
 	color: #fff;
-	text-align: center;
 	position: relative;
-	margin-left: 210px;
-	margin-top: 80vh;
+	margin: 80vh auto auto auto;
 }
 footer {
 	font-family: bureau-grot, serif;
@@ -267,34 +271,46 @@ body.aboutpage{
 	text-transform: uppercase;
 	text-align: center;
 	margin-top: 10vh;
-	margin-left: 210px;
+	margin-bottom: 50px;
 
 }
 .parent {
+	display: grid;
+	max-width: 100%;
+	height: 100vh;
 
 }
 .aboutmainpage {
 
 }
+
 .grid {
-	position: absolute;
 	background-color: #fff;
 	display: grid;
 	grid-template-columns: 1fr 1fr; /*PERCENTAGES UP THE LEFT/RIGHT PADDING COMPARED WITH USING 1FR 1FR*/
-	grid-gap: 40px;
-	width: 60%;
 	padding: 50px;
 	border-radius: 25px;
 	text-align: center;
+	margin-left: 300px;
+	max-width: 70%;
+	margin-bottom: 80px;
 }
 .grid div {
-	background-color: #ccc;
 	padding: 20px;
+	background-color: cornsilk;
 }
 .aboutimage {
 	margin: auto;
-	max-width: 450px;
+	max-width: 500px;
 	width: 100%;
+
+}
+.aboutpage .aboutmainpage{
+	
+}
+
+.aboutpage .grid { 
+	
 }
 .imagecaption {
 	font-family: bureau-grot, serif;
@@ -366,12 +382,10 @@ body.aboutpage{
 		padding-top: 5px;
 	}
 	.tagline{
-		position: absolute;
 		text-align: center;
-		margin-left: 0;
 		max-width: 350px;
 		line-height: 30px;
-		margin-top: 65vh;
+		margin: 65vh auto auto auto;
 	}
 	footer{
 		text-align: center;
@@ -379,9 +393,12 @@ body.aboutpage{
 	  	/*START ABOUT PAGE*/
   	.subpageheader{
   		margin-top: 5vh;
+  		margin-bottom: 20px;
   	}
   	.grid{
   		display: inline-block;
+  		width: 90%;
+  		margin: auto;
   	}
 	/*END ABOUT PAGE*/
 
@@ -411,25 +428,32 @@ body.aboutpage{
 		
   	}
   	footer{ 
-  		left: 50%;
+  		width: 100%;
+  		margin-left: auto;  	
   	}
   	.icon {
   		display: none;
   	}
-}
-/*Desktop*/
-@media only screen and (max-width: 1024px) {
-	.tagline { /*These settings are messing with the centering on mobile*/
+  	.tagline{
+  		text-align: center;
 		max-width: 350px;
 		line-height: 30px;
-		margin-top: 80vh;
-		margin-left: -150px;
-		left: 55%;
-
 	}
 }
+/*Desktop*/
+@media only screen and (max-width: 1160px) {
+	.grid { 
+		display: inline-block;
+	}
+}
+
+@media only screen and (max-width: 1024px) {
+
+}
 @media only screen and (min-width: 1024px) {
-	body{
+	.tagline { 
+		max-width: 350px;
+		line-height: 30px;
 		
 	}
 }
