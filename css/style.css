@@ -1,338 +1,338 @@
-/* Enter your Styles below! */
+/* START OF HOMEPAGE*/
 
-body { 
-	font-family: bureau-grot, sans-serif;
-	font-weight: 400;
-	font-style: normal;
-	/*font weight MUST come first or else typeface won't work*/
-	}
-
-
-
-blockquote {
-	margin: 20px 60px;
-	font-family: Helvetica, sans-serif;
-}
+		body { 
+			font-family: bureau-grot, sans-serif;
+			font-weight: 400;
+			font-style: normal;
+			/*font weight MUST come first or else typeface won't work*/
+			}
 
 
 
-/* ensures that your images stretch the width of their containers */
-/*img { width: 100%; }*/
+		blockquote {
+			margin: 20px 60px;
+			font-family: Helvetica, sans-serif;
+		}
 
-a {
-	text-decoration: none;
-	color: #fff;
-	 }
-a:hover { 
-	color: #e15e35; 
 
-}
-.sidenav {
-	text-transform: uppercase;
-	height: 100%;
-	width: 170px;
-  	position: fixed;
-	z-index: 1;
-	top: 0;
-	left: 0;
-	background-color: #87d2d4;
-	overflow-x: hidden;
-	padding-top: 20px;
-	text-align: right;
-}
-.sidenav a {
-	padding: 40px 30px 6px 10px;
-	text-decoration: none;
-	font-size: 25px;
-	color: #fff;
-	display: block;
-	}
-.sidenav a:hover {
-  	color: #e15e35;
-}
-.hamburgericon {
-	width: 80px;
-	padding-bottom: 80px;
-}
-.active.hamburgericon {
-	max-height: 50px;
-}
-/* START OF MOBILE MENU*/
-.nav, .desktop {
-    display: block;
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    z-index: 900;
-}
 
-.icon {
-    position: fixed;
-    cursor: pointer;
-    top: 5%;
-    right: 20%;
-    width: 40px;
-    height: 45px;
-    transform: translate(-50%, -50%);
-    display: block;
-    z-index: 1000;
-}
+		/* ensures that your images stretch the width of their containers */
+		/*img { width: 100%; }*/
 
-.hamburger {
-    width: 60px;
-    height: 4px;
-    line-height: 70px;
-    background: #fff;
-    border-radius: 5px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    box-shadow: 0 2px 5px rgba(0,0,0,.2);
-    transition: .5s;
-}
+		a {
+			text-decoration: none;
+			color: #fff;
+			 }
+		a:hover { 
+			color: #e15e35; 
 
-.hamburger:before,
-.hamburger:after {
-    content: '';
-    position: absolute;
-    width: 60px;
-    height: 4px;
-    background: #fff;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0,0,0,.2);
-    transition: .5s;
-}
+		}
+		.sidenav a.active {
+			text-decoration: underline;
+		}
+		.parent {
+			display: grid;
+			max-width: 100%;
+			height: 100vh;
+			grid-template-columns: 170px 1fr;
+		}
+		.sidenav {
+			/*	position: -webkit-sticky;  NOT SURE HOW TO MAKE SIDENAV STICK
+  				position: sticky;
+  				top: 0; */
+			text-transform: uppercase;
+			height: 100%;
+			background-color: #87d2d4;
+			overflow-x: hidden;
+			padding-top: 20px;
+			text-align: right;
+		}
+		.sidenav a {
+			padding: 40px 30px 6px 10px;
+			text-decoration: none;
+			font-size: 25px;
+			color: #fff;
+			display: block;
+			}
+		.sidenav a:hover {
+		  	color: #e15e35;
+		}
+		.hamburgericon {
+			width: 80px;
+			padding-bottom: 80px;
+		}
+		.active.hamburgericon {
+			max-height: 50px;
+		}
+	/* START OF MOBILE MENU*/
+		.nav, .desktop {
+		    display: block;
+		    position: fixed;
+		    top: 0px;
+		    left: 0px;
+		    width: 100%;
+		    z-index: 900;
+		}
 
-.hamburger:before {
-    top: -10px;
-}
+		.icon {
+		    position: fixed;
+		    cursor: pointer;
+		    top: 5%;
+		    right: 20%;
+		    width: 40px;
+		    height: 45px;
+		    transform: translate(-50%, -50%);
+		    display: block;
+		    z-index: 1000;
+		}
 
-.hamburger:after {
-    top: 10px;
-}
+		.hamburger {
+		    width: 60px;
+		    height: 4px;
+		    line-height: 70px;
+		    background: #fff;
+		    border-radius: 5px;
+		    position: absolute;
+		    top: 50%;
+		    left: 50%;
+		    transform: translate(-50%,-50%);
+		    box-shadow: 0 2px 5px rgba(0,0,0,.2);
+		    transition: .5s;
+		}
 
-.icon.active .hamburger {
-    background: rgba(0,0,0,0);
-    box-shadow: 0 2px 5px rgba(0,0,0,0);
-}
+		.hamburger:before,
+		.hamburger:after {
+		    content: '';
+		    position: absolute;
+		    width: 60px;
+		    height: 4px;
+		    background: #fff;
+		    border-radius: 5px;
+		    box-shadow: 0 2px 5px rgba(0,0,0,.2);
+		    transition: .5s;
+		}
 
-.icon.active .hamburger:before {
-    top: 0;
-    transform: rotate(45deg);
-}
+		.hamburger:before {
+		    top: -10px;
+		}
 
-.icon.active .hamburger:after {
-    top: 0;
-    transform: rotate(135deg);
-}
+		.hamburger:after {
+		    top: 10px;
+		}
 
-.menu-mobile {
-    background-color: #fff;
-    height: 100vh;
-    position: fixed;
-    width: 100%;
-    z-index: 999;
-    padding-top: 150px;
-    font-family: 'bureau-grot', serif;
-    font-weight: 400;
-    text-transform: uppercase;
-    text-align: center;
-}
+		.icon.active .hamburger {
+		    background: rgba(0,0,0,0);
+		    box-shadow: 0 2px 5px rgba(0,0,0,0);
+		}
 
-.menu-mobile, .menu-mobile a {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
-.menu-mobile a {
-    clear: right;
-    text-decoration: none;
-    color: #e15e35;
-    height: 70px;
-    line-height: 70px;
-    font-size: 20px;
-}
-.menu-mobile a:hover {
-    text-decoration: underline;
-}
+		.icon.active .hamburger:before {
+		    top: 0;
+		    transform: rotate(45deg);
+		}
 
-.desktop, .menu-desktop, .menu-mobile {
-        display: none;
-}
-hr.menu-mobileseparator {
-	border: 1px solid #e15e35;
-	width: 60%;
-}
-.mobilehours {
-	font-size: 50px;
-}
-h3.mobileshowhours {
-	color: #e15e35;
-	font-family: museo-slab, serif;
-	font-weight: 500;
-	font-size: 18px;
-	text-transform: capitalize;
-	margin-bottom: 5px;
-}
-h4.mobileshowhours {
-	color: #e15e35;
-	font-family: bureau-grot, serif;
-	line-height: 20px;
-	font-weight: 300;
-	font-size: 14px;
-	text-transform: uppercase;
-	margin-bottom: 20px;
-}
-/* END OF MOBILE MENU*/
-.showhours {
-  	color: #fff;
-  	display: none;
-  	margin-top: 20px;
-  	padding-right: 30px;
-}
-.showhours {
-	transition: width 2s;
-}
-h3.showhours {
-	font-family: museo-slab, serif;
-	font-weight: 500;
-	font-size: 22px;
-	text-transform: capitalize;
-}
-h4.showhours {
-	font-family: bureau-grot, serif;
-	line-height: 20px;
-	font-weight: 300;
-	font-size: 16px;
-	text-transform: uppercase;
-}
-.parent .sidenav .hoverhourbutton:hover .showhours {
-  	display: block;
- 	
-}
-.homemainpage {
-	background-size: cover;
-	margin: auto;
-}
-.desktoplogo {
-	height: 350px;
-   	left: 55%;
-   	margin-top: -175px;
-   	margin-left: -175px;
-   	position: absolute;
-   	top: 50%;
-   
-}
-.mobilelogo{
-	height: 300px;
-	position: absolute;
-	top: 50%;
-	margin-top: -150px;
-	left: 50%;
-	margin-left: -175px;
-}
-.tagline {
-	font-family: bureau-grot, serif;
-	font-weight: 500;
-	font-style: normal;
-	font-size: 24px;
-	text-transform: uppercase;
-	color: #fff;
-	position: relative;
-	margin: 80vh auto auto auto;
-}
-footer {
-	font-family: bureau-grot, serif;
-	font-weight: 500;
-	font-style: normal;
-	font-size: 14px;
-	color: #fff;
-	text-align: center;
-	position: fixed;
-  	bottom: 5px;
-	margin-top: 80vh;
+		.icon.active .hamburger:after {
+		    top: 0;
+		    transform: rotate(135deg);
+		}
 
-}
+		.menu-mobile {
+		    background-color: #fff;
+		    height: 100vh;
+		    position: fixed;
+		    width: 100%;
+		    z-index: 999;
+		    padding-top: 150px;
+		    font-family: 'bureau-grot', serif;
+		    font-weight: 400;
+		    text-transform: uppercase;
+		    text-align: center;
+		}
+
+		.menu-mobile, .menu-mobile a {
+		    display: flex;
+		    flex-direction: column;
+		    justify-content: space-evenly;
+		}
+		.menu-mobile a {
+		    clear: right;
+		    text-decoration: none;
+		    color: #e15e35;
+		    height: 70px;
+		    line-height: 70px;
+		    font-size: 20px;
+		}
+		.menu-mobile a:hover {
+		    text-decoration: underline;
+		}
+
+		.desktop, .menu-desktop, .menu-mobile {
+		        display: none;
+		}
+		hr.menu-mobileseparator {
+			border: 1px solid #e15e35;
+			width: 60%;
+		}
+		.mobilehours {
+			font-size: 50px;
+		}
+		h3.mobileshowhours {
+			color: #e15e35;
+			font-family: museo-slab, serif;
+			font-weight: 500;
+			font-size: 18px;
+			text-transform: capitalize;
+			margin-bottom: 5px;
+		}
+		h4.mobileshowhours {
+			color: #e15e35;
+			font-family: bureau-grot, serif;
+			line-height: 20px;
+			font-weight: 300;
+			font-size: 14px;
+			text-transform: uppercase;
+			margin-bottom: 20px;
+		}
+	/* END OF MOBILE MENU*/
+		.showhours {
+		  	color: #fff;
+		  	display: none;
+		  	margin-top: 20px;
+		  	padding-right: 30px;
+		}
+		.showhours {
+			transition: width 2s;
+		}
+		h3.showhours {
+			font-family: museo-slab, serif;
+			font-weight: 500;
+			font-size: 22px;
+			text-transform: capitalize;
+		}
+		h4.showhours {
+			font-family: bureau-grot, serif;
+			line-height: 20px;
+			font-weight: 300;
+			font-size: 16px;
+			text-transform: uppercase;
+		}
+		.parent .sidenav .hoverhourbutton:hover .showhours {
+		  	display: block;
+		 	
+		}
+		.homemainpage {
+			background-size: cover;
+			margin: auto;
+			display: inline-block;
+		}
+		.desktoplogo {
+			width: 400px;
+			margin: auto auto auto auto;
+			display: block;
+		}
+		.mobilelogo{
+			height: 300px;
+			position: absolute;
+			top: 50%;
+			margin-top: -150px;
+			left: 50%;
+			margin-left: -175px;
+		}
+		.tagline {
+			font-family: bureau-grot, serif;
+			font-weight: 500;
+			font-style: normal;
+			font-size: 24px;
+			text-transform: uppercase;
+			color: #fff;
+			margin: 20px auto auto auto;
+			text-align: center;
+			line-height: 60px;
+		}
+		footer {
+			background-color: red;
+			font-family: bureau-grot, serif;
+			font-weight: 500;
+			font-style: normal;
+			font-size: 14px;
+			color: #fff;
+			position: fixed;
+			width: 100%;
+		  	bottom: 0;
+		  	left: 0;
+		  	text-align: center;
+		}
 /*END OF HOMEPAGE*/
 /*START ABOUT PAGE*/
-body.aboutpage{
-	background-color: #e15e35;
-	background-image: url("../images/testdesktoptriangles.png");
-	background-size: cover;
-}
-.subpageheader {
-	font-family: bureau-grot, serif;
-	font-weight: 500;
-	font-style: normal;
-	font-size: 36px;
-	color: #fff;
-	text-transform: uppercase;
-	text-align: center;
-	margin-top: 10vh;
-	margin-bottom: 50px;
+		body.aboutpage{
+			background-color: #e15e35;
+			background-image: url("../images/testdesktoptriangles.png");
+			background-size: cover;
+		}
+		.subpageheader {
+			font-family: bureau-grot, serif;
+			font-weight: 500;
+			font-style: normal;
+			font-size: 36px;
+			color: #fff;
+			text-transform: uppercase;
+			text-align: center;
+			margin-top: 10vh;
+			margin-bottom: 50px;
 
-}
-.parent {
-	display: grid;
-	max-width: 100%;
-	height: 100vh;
+		}
+		.aboutmainpage {
+			background-size: cover;
+			margin: auto;
+			display: inline-block;
+		}
+		.grid {
+			background-color: #fff;
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			padding: 50px;
+			border-radius: 25px;
+			text-align: center;
+			max-width: 70%;
+			margin: auto auto 80px auto;
+		}
+		.grid div {
+			padding: 20px;
+			background-color: cornsilk;
+		}
+		.aboutimage {
+			margin: auto;
+			max-width: 500px;
+			width: 100%;
 
-}
-.aboutmainpage {
+		}
+		.aboutpage .aboutmainpage{
+			
+		}
 
-}
-
-.grid {
-	background-color: #fff;
-	display: grid;
-	grid-template-columns: 1fr 1fr; /*PERCENTAGES UP THE LEFT/RIGHT PADDING COMPARED WITH USING 1FR 1FR*/
-	padding: 50px;
-	border-radius: 25px;
-	text-align: center;
-	margin-left: 300px;
-	max-width: 70%;
-	margin-bottom: 80px;
-}
-.grid div {
-	padding: 20px;
-	background-color: cornsilk;
-}
-.aboutimage {
-	margin: auto;
-	max-width: 500px;
-	width: 100%;
-
-}
-.aboutpage .aboutmainpage{
-	
-}
-
-.aboutpage .grid { 
-	
-}
-.imagecaption {
-	font-family: bureau-grot, serif;
-	font-weight: 400;
-	font-size: 16px;
-	line-height: 20px;
-	text-transform: uppercase;
-	color: #e15e35;
-	padding-top: 30px;
-}
-.aboutbody {
-	font-family: museo-slab, serif;
-	font-weight: 500;
-	font-size: 16px;
-	line-height: 20px;
-	color: #565656;
-	text-align: left;
-}
-.hyperlink {
-	text-decoration: underline;
-	color: #565656;
-}
+		.aboutpage .grid { 
+			
+		}
+		.imagecaption {
+			font-family: bureau-grot, serif;
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 20px;
+			text-transform: uppercase;
+			color: #e15e35;
+			padding-top: 15px;
+		}
+		.aboutbody {
+			font-family: museo-slab, serif;
+			font-weight: 500;
+			font-size: 16px;
+			line-height: 20px;
+			color: #565656;
+			text-align: left;
+		}
+		.hyperlink {
+			text-decoration: underline;
+			color: #565656;
+		}
 /*END ABOUT PAGE*/
 
 /*START MENU PAGE*/
@@ -344,62 +344,71 @@ body.aboutpage{
 /*START GALLERY PAGE*/
 /*END GALLERY PAGE*/
 
-/*Mobile Version*/
-@media only screen and (max-width: 768px) {
-	.sidenav{
-		display: none;
-	}
-	.desktoplogo{
-		display: none;
-	}
-	body.homepage {
-		background-color: #e15e35;
-		background-image: url("../images/testmobiletriangles.png");
-		background-size: cover;
-	}
-	ul.mobilelinks {
-		padding-top: 10px;
-		margin: auto;
-	}
-	ul.mobilelinks li {
-		display: inline;
-	}
-	.mobilephoneicon {
-		max-height: 50px;'
-		position: absolute;
-		left: 50px;
-	}
-	.mobilehamburgerdropdown{
-		width: 80px;
-		position: absolute;
-		margin: auto;
-		justify-content: center;
-	}
-	.mobilelocationicon{
-		max-height: 40px;
-		position: absolute;
-		right: 20px;
-		padding-top: 5px;
-	}
-	.tagline{
-		text-align: center;
-		max-width: 350px;
-		line-height: 30px;
-		margin: 65vh auto auto auto;
-	}
-	footer{
-		text-align: center;
-	}
-	  	/*START ABOUT PAGE*/
-  	.subpageheader{
-  		margin-top: 5vh;
-  		margin-bottom: 20px;
-  	}
-  	.grid{
-  		display: inline-block;
-  		width: 90%;
-  		margin: auto;
-  	}
+/*Mobile Media Query*/
+		@media only screen and (max-width: 768px) {
+			.parent {
+				display: inline; 
+			}
+			.sidenav{
+				display: none;
+			}
+			.homemainpage {
+				width: 100%;
+			}
+			.aboutmainpage {
+				width: 100%;
+			}
+			.desktoplogo{
+				display: none;
+			}
+			body.homepage {
+				background-color: #e15e35;
+				background-image: url("../images/testmobiletriangles.png");
+				background-size: cover;
+			}
+			ul.mobilelinks {
+				padding-top: 10px;
+				margin: auto;
+			}
+			ul.mobilelinks li {
+				display: inline;
+			}
+			.mobilephoneicon {
+				max-height: 50px;'
+				position: absolute;
+				left: 50px;
+			}
+			.mobilehamburgerdropdown{
+				width: 80px;
+				position: absolute;
+				margin: auto;
+				justify-content: center;
+			}
+			.mobilelocationicon{
+				max-height: 40px;
+				position: absolute;
+				right: 20px;
+				padding-top: 5px;
+			}
+			.tagline{
+				text-align: center;
+				max-width: 400px;
+				line-height: 30px;
+				margin: 65vh auto auto auto;
+			}
+			footer{
+				text-align: center;
+			}
+			  	/*START ABOUT PAGE*/
+		  	.subpageheader{
+		  		margin-top: 5vh;
+		  		margin-bottom: 20px;
+		  	}
+		  	.grid{
+		  		display: inline-block;
+		  		width: 90%;
+		  		margin: auto;
+		  	}
 	/*END ABOUT PAGE*/
 
 	/*START MENU PAGE*/
@@ -410,59 +419,43 @@ body.aboutpage{
 
 	/*START GALLERY PAGE*/
 	/*END GALLERY PAGE*/
-  }
- /*Larger than Mobile*/
-@media only screen and (min-width: 768px) {
-	.mobilelinks{
-		display: none;
-	}
-	.desktoplogo{
-		display: all;
-	}
-	.mobilelogo{
-		display: none;
-	}
-	body.homepage{
-		background-image: url("../images/testdesktopbackground.jpg");
-		background-size: cover;
-		
-  	}
-  	footer{ 
-  		width: 100%;
-  		margin-left: auto;  	
-  	}
-  	.icon {
-  		display: none;
-  	}
-  	.tagline{
-  		text-align: center;
-		max-width: 350px;
-		line-height: 30px;
-	}
-}
+		}
+/*Larger than Mobile*/
+		@media only screen and (min-width: 768px) {
+			.mobilelinks{
+				display: none;
+			}
+			.mobilelogo{
+				display: none;
+			}
+			body.homepage{
+				background-image: url("../images/testdesktopbackground.jpg");
+				background-size: cover;
+				
+		  	}
+		  	.icon {
+		  		display: none;
+		  	}
+		}
 /*Desktop*/
-@media only screen and (max-width: 1160px) {
-	.grid { 
-		display: inline-block;
-	}
-}
+		@media only screen and (max-width: 1160px) {
+			.grid { 
+				display: block;
+			}
+		}
 
-@media only screen and (max-width: 1024px) {
-
-}
-@media only screen and (min-width: 1024px) {
-	.tagline { 
-		max-width: 350px;
-		line-height: 30px;
-		
-	}
-}
+		@media only screen and (max-width: 1024px) {
+			
+		}
+		@media only screen and (min-width: 1024px) {
+			
+		}
 /*Desktop Wide*/
-@media only screen and (min-width: 1200px) {
-	body{
-		
-	}
-}
+		@media only screen and (min-width: 1200px) {
+			body{
+				
+			}
+		}
 
 
 
