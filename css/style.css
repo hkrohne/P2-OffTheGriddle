@@ -336,6 +336,54 @@
 /*END ABOUT PAGE*/
 
 /*START MENU PAGE*/
+		.menumainpage {
+			background-size: cover;
+			margin: auto;
+			display: inline-block;
+		}
+		.menumainpage .grid {
+			max-width: 80%;
+		}
+		.menumainpage .grid div {
+			padding: 0px 20px 5px 0px;
+			background-color: cornsilk;
+		}
+		.menusectiontitle {
+			color: #e15e35;
+			font-family: bureau-grot, serif;
+			font-weight: 400;
+			font-size: 20px;
+			text-transform: uppercase;
+			margin-bottom: 20px;
+		}
+		.foodname {
+			color: #565656;
+			font-family: museo-slab, serif;
+			font-weight: 500;
+			font-size: 16px;
+			text-align: left;
+			text-transform: uppercase;
+		}
+		.foodname span{
+			position:relative;
+ 			
+		}
+		.price {
+			text-align: right;
+		}
+		.foodname .price {
+			float:right;
+ 			padding:0 0 0 15px;
+		}
+		.fooddescription {
+			color: #565656;
+			font-family: museo-slab, serif;
+			font-weight: 300;
+			font-size: 14px;
+			text-align: left;
+			line-height: 18px;
+			margin-bottom: 25px;
+		}
 /*END MENU PAGE*/
 
 /*START CONTACT PAGE*/
@@ -358,6 +406,10 @@
 			.aboutmainpage {
 				width: 100%;
 			}
+			.menumainpage {
+				width: 100%;
+			}
+
 			.desktoplogo{
 				display: none;
 			}
