@@ -37,9 +37,10 @@
 			grid-template-columns: 170px 1fr;
 		}
 		.sidenav {
-			/*	position: -webkit-sticky;  NOT SURE HOW TO MAKE SIDENAV STICK
+			/*	position: -webkit-sticky;  NOT SURE HOW TO MAKE SIDENAV STICK, position fixed breaks the mainpage content
   				position: sticky;
   				top: 0; */
+
 			text-transform: uppercase;
 			height: 100%;
 			background-color: #87d2d4;
@@ -78,7 +79,7 @@
 		    position: fixed;
 		    cursor: pointer;
 		    top: 5%;
-		    right: 20%;
+		    right: 42%;
 		    width: 40px;
 		    height: 45px;
 		    transform: translate(-50%, -50%);
@@ -128,11 +129,13 @@
 		.icon.active .hamburger:before {
 		    top: 0;
 		    transform: rotate(45deg);
+		    background: #e15e35;
 		}
 
 		.icon.active .hamburger:after {
 		    top: 0;
 		    transform: rotate(135deg);
+		    background: #e15e35;
 		}
 
 		.menu-mobile {
@@ -249,17 +252,15 @@
 			line-height: 60px;
 		}
 		footer {
-			background-color: red;
 			font-family: bureau-grot, serif;
 			font-weight: 500;
 			font-style: normal;
 			font-size: 14px;
 			color: #fff;
-			position: fixed;
+			position: absolute;
 			width: 100%;
 		  	bottom: 0;
-		  	left: 0;
-		  	text-align: center;
+		  	left: 20px;
 		}
 /*END OF HOMEPAGE*/
 /*START ABOUT PAGE*/
@@ -393,7 +394,7 @@
 			display: inline-block;
 		}
 		.contactmainpage .grid{
-			max-width: 80%;
+			max-width: 70%;
 			grid-template-columns: 1fr 1fr;
 		}
 		.contacttype {
@@ -407,6 +408,9 @@
 		}
 		.clicklinks{
 			text-align: left;
+		}
+		.clicklinks a:hover{
+			color: red;
 		}
 		a.contactlink {
 			color: #e15e35;
@@ -494,9 +498,11 @@
 				display: inline;
 			}
 			.mobilephoneicon {
-				max-height: 50px;'
-				position: absolute;
-				left: 50px;
+				max-height: 50px;
+				left: 5px;
+			}
+			.mobilephoneicon:hover{
+				background: blue;
 			}
 			.mobilehamburgerdropdown{
 				width: 80px;
@@ -507,7 +513,7 @@
 			.mobilelocationicon{
 				max-height: 40px;
 				position: absolute;
-				right: 20px;
+				right: 10px;
 				padding-top: 5px;
 			}
 			.tagline{
@@ -535,6 +541,9 @@
 	/*END MENU PAGE*/
 
 	/*START CONTACT PAGE*/
+			.contactmainpage .grid {
+
+			}
 	/*END CONTACT PAGE*/
 
 	/*START GALLERY PAGE*/
@@ -561,6 +570,10 @@
 		@media only screen and (max-width: 1160px) {
 			.grid { 
 				display: block;
+			}
+			.contactmainpage .grid { 
+				display: grid;
+				max-width: 75%;
 			}
 		}
 
