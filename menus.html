@@ -14,13 +14,33 @@
 <body class="aboutpage">
 	<ul class="mobilelinks">
 			<li><a href="tel:5037649160"><img class="mobilephoneicon" src="images/phoneicon.png" alt="phonelink"></a></li>
-			<li><a href="#"><img src="images/hamburgericon.png" class="mobilehamburgerdropdown" alt="hamburger dropdown"></a></li>
 			<li><a href="https://www.google.com/maps/place/Off+The+Griddle/@45.4888444,-122.5974893,17z/data=!3m1!4b1!4m5!3m4!1s0x5495a0e419b8689d:0x874c9670a0b0be9e!8m2!3d45.4888444!4d-122.5953006"><img class="mobilelocationicon" src="images/locationicon.png" alt="locationicon"></a></li>
 	</ul>
 	<!-- These semantic tags were added to help you get started but you are very welcome to delete any of them and do your own thing -->
-	<header>
-		<!-- header, h1, logo etc content -->
-	</header>
+	<header class="nav">
+        <div class="icon">
+            <div class="hamburger"></div>
+        </div>
+        <div class="menu-mobile">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="menus.html">Menu</a>
+            <a href="contact.html">Contact</a>
+            <a href="gallery.html">Gallery</a>
+            <div class="hoverhourbutton"> <!--TYPE STYLES NOT WORKING--> 
+            	<hr class="menu-mobileseparator">
+				<ul>
+					<li><a class="mobilehours">Hours</a></li>
+					<p class="showhours">
+						<h3 class="mobileshowhours">9am - 3pm</h3>
+						<h4 class="mobileshowhours">Mon–Fri</h4>
+						<h3 class="mobileshowhours">8am - 3pm</h3>
+						<h4 class="mobileshowhours">Sat-Sun</h4>
+					</p>
+				</ul>
+			</div>
+        </div>          
+    </header>
 	<nav>
 		<!-- Global navigation stuff here, but move this or delete this to your liking. Same goes for the rest -->
 		<!-- <ul>
@@ -34,11 +54,11 @@
 	<div class="parent"> 
 			<div class="sidenav"> 
 				<ul>
-					<li><a class="active"  href="index.html"><img src="images/hamburgericon.png" class="hamburgericon" alt="hamburger icon"></a></li>
+					<li><a class="active" href="index.html"><img src="images/hamburgericon.png" class="hamburgericon" alt="hamburger icon"></a></li>
 					<li><a href="about.html">About</a></li>
 					<li><a class="active" href="menus.html">Menus</a></li>
 					<li><a href="contact.html">Contact</a></li>
-					<li><a href="subpage-one.html">Gallery</a></li>
+					<li><a href="gallery.html">Gallery</a></li>
 				</ul>
 				<div class="hoverhourbutton">
 				<ul>
