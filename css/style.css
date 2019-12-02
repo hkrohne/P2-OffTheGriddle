@@ -32,11 +32,18 @@
 			max-width: 100%;
 			height: 100vh;
 			grid-template-columns: 170px 1fr;
+			position: relative;
 		}
+		.spacer { 
+
+		 }
 		.sidenav {
 			/*	position: -webkit-sticky;  NOT SURE HOW TO MAKE SIDENAV STICK, position fixed breaks the mainpage content
   				position: sticky;
   				top: 0; */
+  				position: fixed;
+  				top:0;
+  				left:0;
 			text-transform: uppercase;
 			height: 100%;
 			background-color: #87d2d4;
@@ -46,6 +53,7 @@
 			height: 100vh;
 		}
 		.sidenav a {
+			margin-left: 25px;
 			padding: 40px 30px 6px 10px;
 			text-decoration: none;
 			font-size: 25px;
@@ -76,7 +84,7 @@
 		    position: fixed;
 		    cursor: pointer;
 		    top: 5%;
-		    right: 42%;
+		    right: 40.5vw;
 		    width: 40px;
 		    height: 45px;
 		    transform: translate(-50%, -50%);
@@ -226,16 +234,17 @@
 		}
 		.desktoplogo {
 			width: 400px;
+			opacity: 0.9;
 			margin: auto auto auto auto;
 			display: block;
 		}
 		.mobilelogo{
-			height: 300px;
+			height: 325px;
 			position: absolute;
 			top: 50%;
 			margin-top: -150px;
 			left: 50%;
-			margin-left: -175px;
+			margin-left: -170px;
 		}
 		.tagline {
 			font-family: bureau-grot, serif;
@@ -257,7 +266,7 @@
 			position: absolute;
 			width: 100%;
 		  	bottom: 0;
-		  	left: 20px;
+		  	
 		}
 /*END OF HOMEPAGE*/
 /*START ABOUT PAGE*/
@@ -274,8 +283,7 @@
 			color: #fff;
 			text-transform: uppercase;
 			text-align: center;
-			margin-top: 10vh;
-			margin-bottom: 50px;
+		
 			margin: 10vh auto 50px auto;
 
 		}
@@ -575,7 +583,7 @@
 			}
 			.mobilephoneicon {
 				max-height: 50px;
-				left: 5px; 				/*this isnt moving the icon like it does for the location icon*/
+				margin-left: 5px; 				/*this isnt moving the icon like it does for the location icon*/
 			}
 			.mobilephoneicon:hover{
 				background: #87d2d4;
@@ -627,9 +635,7 @@
 			margin-top: 5vh;
 			margin-bottom: 20px;
 			}
-			.contactscalediv{
-				
-			}
+			
 	/*END CONTACT PAGE*/
 
 	/*START GALLERY PAGE*/
@@ -689,10 +695,22 @@
 			margin-left: 0px;
 			
     		justify-content: space-between;
+			}
 		}
-		}
 
 
+/*	TO-DO
 
+-ADD IMAGE CAROUSEL FOR ABOUT PAGE AND GALLERY PAGE
+-FIX SIDENAV STICKYNESS
+-FIX CONTACT PAGE RESPONSIVENESSS ON MOBILE
+XX REDESIGN HOMEPAGE LOGO
+-ADD ANIMATION TO HOMEPAGE LOGO
+-ANIMAGE OR CHANGE THE TAGLINE LOOK/STYLE
+-FIX/TAKE OUT FOOTER?
+-PLACE LOCATION LINKS ON DESKTOP VERSIONS SOMEWHERE
+-MAKE A TALLER BACKGROUND FOR THE MENUPAGE
+
+*/
 
 
