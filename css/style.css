@@ -38,12 +38,9 @@
 
 		 }
 		.sidenav {
-			/*	position: -webkit-sticky;  NOT SURE HOW TO MAKE SIDENAV STICK, position fixed breaks the mainpage content
-  				position: sticky;
-  				top: 0; */
-  				position: fixed;
-  				top:0;
-  				left:0;
+  			position: fixed;
+  			top:0;
+  			left:0;
 			text-transform: uppercase;
 			height: 100%;
 			background-color: #87d2d4;
@@ -539,12 +536,17 @@
 		.gallerysquare{
 			margin: auto;
 			max-width: 70vw;
-		}
-		.gallerypic {
-			max-height: 50vh;
-			padding: 50px;
 			background-color: #fff;
 			border-radius: 25px;
+		}
+		.slideshow{
+			width: 600px;
+			height: 600px;
+			margin: auto;
+			outline: none;
+			font-family: bureau-grot, serif;
+			font-weight: 400;
+			font-size: 16px; /*Not Working*/
 		}
 /*END GALLERY PAGE*/
 
@@ -635,6 +637,10 @@
 			margin-top: 5vh;
 			margin-bottom: 20px;
 			}
+			 .slideshow{
+			 	width: 350px;
+			 	height: 350px;
+			 }
 			
 	/*END CONTACT PAGE*/
 
@@ -670,6 +676,7 @@
 			.gallerymainpage{ 
 				display: block;
 			 }
+			
 		}
 
 		@media only screen and (max-width: 1024px) {
@@ -701,13 +708,13 @@
 
 /*	TO-DO
 
--ADD IMAGE CAROUSEL FOR ABOUT PAGE AND GALLERY PAGE
--FIX SIDENAV STICKYNESS
+XX ADD IMAGE CAROUSEL FOR ABOUT PAGE AND GALLERY PAGE
+XX FIX SIDENAV STICKYNESS
 -FIX CONTACT PAGE RESPONSIVENESSS ON MOBILE
 XX REDESIGN HOMEPAGE LOGO
 -ADD ANIMATION TO HOMEPAGE LOGO
 -ANIMAGE OR CHANGE THE TAGLINE LOOK/STYLE
--FIX/TAKE OUT FOOTER?
+XX FIX/TAKE OUT FOOTER?
 -PLACE LOCATION LINKS ON DESKTOP VERSIONS SOMEWHERE
 -MAKE A TALLER BACKGROUND FOR THE MENUPAGE
 

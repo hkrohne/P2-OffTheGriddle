@@ -29,6 +29,13 @@ function desktopMenu() {
     })
 }
 
+    $('.slideshow').square1({
+        animation: 'slide',
+        transition_time: 1000,
+        prev_next_nav: 'hover',
+        dots_nav: 'hover'
+    });
+
 //when the page loads call toggleIcon;
 $(toggleIcon);
 $(closeMobileMenu);
