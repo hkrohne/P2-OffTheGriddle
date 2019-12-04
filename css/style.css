@@ -527,6 +527,10 @@
 		input[type=submit]:hover {
 		  opacity: 0.5;
 		}
+		.confirmationmainpage .subpageheader {
+		  		margin-top: 40vh;
+		  		margin-bottom: 10px;
+		  	}
 		.confirmtext{
 			margin: auto;
 			text-align: center;
@@ -654,9 +658,6 @@
 		  		display: inline-block;
 		  		width: 90%;
 		  		margin: auto;
-		  	}
-		  	.confirmationmainpage .subpageheader {
-		  		margin-top: 40vh;
 		  	}
 	/*END ABOUT PAGE*/
 
