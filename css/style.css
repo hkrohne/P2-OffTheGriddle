@@ -51,9 +51,9 @@
 		}
 		.sidenav a {
 			margin-left: 25px;
-			padding: 40px 30px 6px 10px;
+			padding: 40px 40px 6px 10px;
 			text-decoration: none;
-			font-size: 25px;
+			font-size: 22px;
 			color: #fff;
 			display: block;
 			}
@@ -200,7 +200,7 @@
 		  	color: #fff;
 		  	display: none;
 		  	margin-top: 20px;
-		  	padding-right: 30px;
+		  	padding-right: 40px;
 		}
 		.showhours {
 			transition: width 2s;
@@ -208,7 +208,7 @@
 		h3.showhours {
 			font-family: museo-slab, serif;
 			font-weight: 500;
-			font-size: 22px;
+			font-size: 18px;
 			text-transform: capitalize;
 		}
 		h4.showhours {
@@ -301,8 +301,11 @@
 			max-width: 70%;
 			margin: auto auto 80px auto;
 		}
+		.aboutmainpage .grid {
+			grid-gap: 2em;
+		}
 		.aboutmainpage .grid div {
-			padding: 20px;
+			padding: 0px;
 			/*background-color: cornsilk;*/
 
 		}
@@ -524,6 +527,15 @@
 		input[type=submit]:hover {
 		  opacity: 0.5;
 		}
+		.confirmtext{
+			margin: auto;
+			text-align: center;
+		}
+		p.confirmtext {
+			font-family: bureau-grot, serif;
+			font-weight: 400;
+			color: #fff;
+		}
 /*END CONTACT PAGE*/
 
 /*START GALLERY PAGE*/
@@ -642,6 +654,9 @@
 		  		display: inline-block;
 		  		width: 90%;
 		  		margin: auto;
+		  	}
+		  	.confirmationmainpage .subpageheader {
+		  		margin-top: 40vh;
 		  	}
 	/*END ABOUT PAGE*/
 
