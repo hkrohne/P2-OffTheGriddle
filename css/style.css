@@ -95,9 +95,7 @@
 		    line-height: 70px;
 		    background: #fff;
 		    border-radius: 5px;
-		    position: absolute;
-		    top: 50%;
-
+		   	margin: 20px auto auto auto;
 		    transform: translate(-50%,-50%);
 		    box-shadow: 0 2px 5px rgba(0,0,0,.2);
 		    transition: .5s;
@@ -253,6 +251,10 @@
 			margin: 20px auto auto auto;
 			text-align: center;
 			line-height: 60px;
+			background-color: #e15e35;
+			padding-left: 20px;
+			padding-right: 20px;
+			border-radius: 25px;
 		}
 		footer {
 			font-family: bureau-grot, serif;
@@ -428,7 +430,7 @@
 			display: inline-block;
 		}
 		.contactmainpage .grid{
-			max-width: 50%;
+			max-width: 75%;
 			grid-template-columns: 1fr 1fr;
 		}
 	
@@ -440,6 +442,7 @@
 			line-height: 60px;
 			text-align: left;
 			text-transform: uppercase;
+			margin-right: 10px;
 		}
 		.clicklinks{
 			text-align: left;
@@ -467,7 +470,7 @@
 		}
 		.contactform {
 			margin-top: 50px;
-			width: 200%;
+			grid-column: 1/-1;
 		}
     	form {
   			font-family: museo-slab, serif;
@@ -540,13 +543,25 @@
 			border-radius: 25px;
 		}
 		.slideshow{
-			width: 600px;
+			width: 650px;
 			height: 600px;
 			margin: auto;
 			outline: none;
+		}
+		.slides_container {
+			border: 35px solid white;
+			border-radius: 25px;
+		}
+		.square1_caption{
 			font-family: bureau-grot, serif;
 			font-weight: 400;
-			font-size: 16px; /*Not Working*/
+			text-transform: uppercase;
+			color: #e15e35;
+			font-size: 16px;
+			bottom: 10px;
+		}
+		.dots_nav-hover .square1_caption {
+			bottom: -60px;
 		}
 /*END GALLERY PAGE*/
 
@@ -613,6 +628,7 @@
 				max-width: 400px;
 				line-height: 30px;
 				margin: 65vh auto auto auto;
+				background: none;
 			}
 			footer{
 				text-align: center;
@@ -633,18 +649,26 @@
 	/*END MENU PAGE*/
 
 	/*START CONTACT PAGE*/
-			.gallerymainpage .subpageheader {
-			margin-top: 5vh;
-			margin-bottom: 20px;
-			}
 			 .slideshow{
-			 	width: 350px;
+			 	width: 415px;
 			 	height: 350px;
-			 }
-			
+			}
+			.contacttype{
+				font-size: 16px;
+			}	
+			a.contactlink{ 
+				font-size: 16px;
+			}
+			p.updateformtitle{
+				font-size: 16px;
+			}		
 	/*END CONTACT PAGE*/
 
 	/*START GALLERY PAGE*/
+			.gallerymainpage .subpageheader {
+				margin-top: 5vh;
+				margin-bottom: 20px;
+			}
 	/*END GALLERY PAGE*/
 		}
 /*Larger than Mobile*/
