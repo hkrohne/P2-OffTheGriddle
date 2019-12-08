@@ -67,6 +67,11 @@
 			width: 80px;
 			padding-bottom: 80px;
 		}
+		.hamburgericon:hover{
+			-webkit-animation: rotate-vert-center 0.9s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+	        animation: rotate-vert-center 0.9s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
+		}
 	/* START OF MOBILE MENU*/
 		.nav, .desktop {
 		    display: block;
@@ -232,6 +237,8 @@
 			opacity: 0.9;
 			margin: auto auto auto auto;
 			display: block;
+			animation-duration: 2s;
+  			animation-name: bounceIn;
 		}
 		.mobilelogo{
 			height: 325px;
@@ -240,6 +247,8 @@
 			margin-top: -150px;
 			left: 50%;
 			margin-left: -170px;
+			animation-duration: 2s;
+  			animation-name: bounceIn;
 		}
 		.tagline {
 			font-family: bureau-grot, serif;
@@ -255,6 +264,8 @@
 			padding-left: 20px;
 			padding-right: 20px;
 			border-radius: 25px;
+			animation-duration: 2s;
+  			animation-name: bounceIn;
 		}
 		footer {
 			font-family: bureau-grot, serif;
@@ -267,6 +278,42 @@
 		  	bottom: 0;
 		  	
 		}
+		@keyframes bounceIn {
+		  0% {
+		    transform: scale(0.1);
+		    opacity: 0;
+		  }
+		  60% {
+		    transform: scale(1);
+		    opacity: 1;
+		  }
+		  100% {
+		    transform: scale(1);
+		  }
+		}
+
+		@-webkit-keyframes rotate-vert-center {
+		  0% {
+		    -webkit-transform: rotateY(0);
+		            transform: rotateY(0);
+		  }
+		  100% {
+		    -webkit-transform: rotateY(360deg);
+		            transform: rotateY(360deg);
+		  }
+		}
+		@keyframes rotate-vert-center {
+		  0% {
+		    -webkit-transform: rotateY(0);
+		            transform: rotateY(0);
+		  }
+		  100% {
+		    -webkit-transform: rotateY(360deg);
+		            transform: rotateY(360deg);
+		  }
+		}
+
+
 /*END OF HOMEPAGE*/
 /*START ABOUT PAGE*/
 		body.aboutpage{
@@ -436,7 +483,7 @@
 			max-width: 75%;
 			grid-template-columns: 1fr 1fr;
 		}
-	
+
 		.contacttype {
 			color: #e15e35;
 			font-family: bureau-grot, serif;
